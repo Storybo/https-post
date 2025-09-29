@@ -44,9 +44,13 @@ The proxy forwards all requests to `http://127.0.0.1:11434` (Ollama server). You
 ### CORS and Authentication
 DO NOT START OLLAMA FROM UI.
 ```
-OLLAMA_ORIGINS=https://abcdfef.com,https://myapp.com OLLAMA_MODELS=/Volumes/AFFDEVLLM/models ollama serve
+OLLAMA_ORIGINS=https://abcdfef.com,https://myapp.com OLLAMA_MODELS=/<<DIR>>/models ollama serve
 ```
-
+Copy ols.command to Desktop and run
+```
+chmod +x Desktop/ols.command 
+```
+Then you can double click to start ollama server, Node and Tailscale.
 
 ### License
 ISC
